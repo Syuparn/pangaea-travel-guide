@@ -2,3 +2,6 @@
 /public/build/
 
 .DS_Store
+
+/public/main.wasm
+/public/wasm_exec.js

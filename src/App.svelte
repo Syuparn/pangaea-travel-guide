@@ -1,10 +1,16 @@
-<script>
-	export let name;
+<script lang="ts">
+	import * as pangaea from './pangaea/pangaea.js';
+	export let name: string;
+
+	function runScript() {
+		const res = pangaea.run('"Hello, world!".p', '');
+		console.log(res.stdout);
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<button on:click={runScript}>Run</button>
 </main>
 
 <style>
