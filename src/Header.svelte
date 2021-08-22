@@ -13,6 +13,7 @@
         width: 100%;
         text-align: left;
         margin: 0 auto;
+        margin-bottom: 0.5em;
         background-color: #2e4d55;
     }
 
