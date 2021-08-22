@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Codearea from "./Codearea.svelte";
 	import Explanation from "./Explanation.svelte";
 	import Header from "./Header.svelte"
 	import * as pangaea from './pangaea/pangaea.js';
@@ -13,7 +14,7 @@
 	<Header></Header>
 	<div class="flex">
 		<Explanation></Explanation>
-		<Explanation></Explanation>
+		<Codearea></Codearea>
 	</div>
 	<button on:click={runScript}>Run</button>
 </main>

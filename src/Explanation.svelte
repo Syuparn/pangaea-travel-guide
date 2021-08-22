@@ -5,16 +5,16 @@
 <style>
     div {
         margin: 1rem;
-        font-size: 1.2rem;
-        background-color: #17262b;
-        color: #c0d32b;
-        font-family: 'Source Code Pro', monospace;
+        padding: 1rem;
+        background-color: #404510;
+        color: #dddddd;
         text-align: left; 
+        line-height: 1.75em;
     }
 
     @media (min-width: 640px) {
 		div {
-			flex-grow: 1;
+			flex: 1;
 		}
 	}
 </style>
