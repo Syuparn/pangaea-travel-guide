@@ -3,7 +3,7 @@
     export let text: string;
 </script>
 
-<textarea rows="{rows}" cols="80">{text}</textarea>
+<textarea rows="{rows}" cols="80" bind:value={text}></textarea>
 
 <style>
     textarea {

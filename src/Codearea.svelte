@@ -2,15 +2,30 @@
     import Input from "./Input.svelte";
     import Output from "./Output.svelte";
     import RunButton from "./RunButton.svelte";
+    import * as pangaea from "./pangaea/pangaea.js";
+
+    // TODO: export them
+    let source = `"Hello, world!".p`;
+    let input = "abc";
+    let output = "";
+
+    function runScript() {
+        const res = pangaea.run(source, input);
+        if (res.errmsg !== '') {
+            output = res.errmsg;
+        } else {
+            output = res.stdout;
+        }
+    }
 </script>
 
 <div id="container">
     <p class="title">source code</p>
-    <Input rows={5} text={`"Hello, world!".p`}></Input>
+    <Input rows={5} bind:text={source}></Input>
     <p class="title">input</p>
-    <Input rows={2} text="abc"></Input>
-    <p class="button-row"><RunButton></RunButton></p>
-    <Output text=""></Output>
+    <Input rows={2} bind:text={input}></Input>
+    <p class="button-row"><RunButton on:click={runScript}></RunButton></p>
+    <Output text={output}></Output>
 </div>
 
 <style>
