@@ -4,10 +4,9 @@
     import RunButton from "./RunButton.svelte";
     import * as pangaea from "./pangaea/pangaea.js";
 
-    // TODO: export them
-    let source = `"Hello, world!".p`;
-    let input = "abc";
-    let output = "";
+    export let source: string;
+    export let input: string;
+    export let output: string;
 
     function runScript() {
         const res = pangaea.run(source, input);

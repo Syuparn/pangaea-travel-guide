@@ -1,14 +1,20 @@
 <script lang="ts">
 	import Codearea from "./Codearea.svelte";
 	import Explanation from "./Explanation.svelte";
-	import Header from "./Header.svelte"
+	import Header from "./Header.svelte";
+
+	const code = {
+		source: `"Hello, world!".p`,
+    	input: "abc",
+    	output: ""
+	};
 </script>
 
 <main>
 	<Header></Header>
 	<div class="flex">
 		<Explanation></Explanation>
-		<Codearea></Codearea>
+		<Codearea {...code}></Codearea>
 	</div>
 </main>
 
