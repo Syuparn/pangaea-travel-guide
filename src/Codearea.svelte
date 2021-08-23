@@ -1,34 +1,21 @@
+<script lang="ts">
+    import Input from "./Input.svelte";
+    import Output from "./Output.svelte";
+    import RunButton from "./RunButton.svelte";
+</script>
+
 <div id="container">
     <p class="title">source code</p>
-    <div class="codearea">
-        "Hello, world!".p
-    </div>
+    <Input rows={5} text={`"Hello, world!".p`}></Input>
     <p class="title">input</p>
-    <div class="codearea">
-        hoge
-    </div>
-    <p class="title">output</p>
-    <div class="codearea">
-        Hello, world!
-    </div>
+    <Input rows={2} text="abc"></Input>
+    <p class="button-row"><RunButton></RunButton></p>
+    <Output text=""></Output>
 </div>
 
 <style>
-    .title {
-        color: white;
-        text-align: left;
-    }
-
-    .codearea {
-        background-color: #17262b;
-        color: #c0d32b;
-        font-family: 'Source Code Pro', monospace;
-        text-align: left;
-        padding: 0.5rem;
-    }
-
     #container {
-        margin: 1rem;
+        margin: 0rem;
     }
 
     @media (min-width: 640px) {
@@ -36,4 +23,15 @@
 			flex: 1;
 		}
 	}
+
+    .title {
+        color: white;
+        text-align: left;
+    }
+
+    .button-row {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 </style>

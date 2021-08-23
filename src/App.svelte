@@ -34,6 +34,7 @@
 
 		.flex {
 			display: flex;
+			justify-content: flex-start;
 		}
 	}
 </style>
