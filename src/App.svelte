@@ -26,6 +26,11 @@
 		margin: 0;
 	}
 
+	.flex {
+		/* NOTE: nesessary to avoid header */
+		padding-top: 4em;
+	}
+
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
