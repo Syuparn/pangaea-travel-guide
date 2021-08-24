@@ -1,9 +1,13 @@
 <script>
+    import LinkButton from "./LinkButton.svelte";
+
     let src = './logo.svg';
 </script>
 
 <header>
     <img id="logo" src={src} alt="Pangaea Travel Guide"/>
+    <LinkButton href="./" text="back"></LinkButton>
+    <LinkButton href="./" text="next"></LinkButton>
 </header>
 
 <style>

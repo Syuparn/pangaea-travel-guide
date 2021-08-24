@@ -1,7 +1,3 @@
-<script lang="ts">
-
-</script>
-
 <button on:click>Run</button>
 
 <style>
