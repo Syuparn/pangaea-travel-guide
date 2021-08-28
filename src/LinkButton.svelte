@@ -1,9 +1,11 @@
 <script lang="ts">
+    import {Link} from 'svelte-routing';
+
     export let text: string;
-    export let href: string;
+    export let link: string;
 </script>
 
-<p><a href={href}>{text}</a></p>
+<Link to="{link}"><p>{text}</p></Link>
 
 <style>
     p {
@@ -12,24 +14,12 @@
         padding: 0.4em;
         margin-left: 4em;
         background-color: #17262b;
+        color: #c0d32b;
     }
 
     p:hover {
         background-color: #c0d32b;
-    }
-
-    p:hover a {
-        background-color: #c0d32b;
         color: #17262b;
-    }
-
-    a {
-        color: #c0d32b;
-        font-size: 1.1em;
-    }
-
-    a:hover {
-	    text-decoration: none;
     }
 </style>
 

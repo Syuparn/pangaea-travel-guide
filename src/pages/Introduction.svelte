@@ -1,0 +1,25 @@
+<script lang="ts">
+    import {pageLink} from "./pagelinkstore.js";
+    import {code} from "./codestore.js";
+    // HACK: reload current path and update page link store
+    pageLink.reload()
+
+    // update codearea
+    code.insert(
+        // source
+        `# you can see and edit source code here`,
+        // input
+        `some input to read`,
+    )
+</script>
+
+<h1>0. Introduction</h1>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<style>
+    h1 {
+        font-size: 1.2em;
+    }
+</style>
