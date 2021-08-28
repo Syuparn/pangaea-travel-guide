@@ -1,13 +1,14 @@
-<script>
+<script lang="ts">
     import LinkButton from "./LinkButton.svelte";
+    import {pageLink} from "./pages/pagelinkstore.js";
 
     let src = './logo.svg';
 </script>
 
 <header>
     <img id="logo" src={src} alt="Pangaea Travel Guide"/>
-    <LinkButton link="" text="back"></LinkButton>
-    <LinkButton link="helloworld" text="next"></LinkButton>
+    <LinkButton link="{$pageLink.back().page()}" text="back"></LinkButton>
+    <LinkButton link="{$pageLink.next().page()}" text="next"></LinkButton>
 </header>
 
 <style>
