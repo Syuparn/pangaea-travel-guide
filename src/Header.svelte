@@ -6,8 +6,8 @@
 
 <header>
     <img id="logo" src={src} alt="Pangaea Travel Guide"/>
-    <LinkButton href="./" text="back"></LinkButton>
-    <LinkButton href="./" text="next"></LinkButton>
+    <LinkButton link="" text="back"></LinkButton>
+    <LinkButton link="helloworld" text="next"></LinkButton>
 </header>
 
 <style>

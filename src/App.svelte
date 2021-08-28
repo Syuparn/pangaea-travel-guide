@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { Router, Route } from "svelte-routing";
 	import Codearea from "./Codearea.svelte";
 	import Explanation from "./Explanation.svelte";
 	import Header from "./Header.svelte";
+	import IntroductionPage from "./pages/Introduction.svelte";
+	import HelloWorldPage from "./pages/HelloWorld.svelte";
 
 	const code = {
 		source: `"Hello, world!".p`,
@@ -10,13 +13,18 @@
 	};
 </script>
 
-<main>
-	<Header></Header>
-	<div class="flex">
-		<Explanation></Explanation>
-		<Codearea {...code}></Codearea>
-	</div>
-</main>
+<Router>
+	<main>
+		<Header></Header>
+		<div class="flex">
+			<Explanation>
+				<Route path="" component={IntroductionPage} />
+				<Route path="helloworld" component={HelloWorldPage} />
+			</Explanation>
+			<Codearea {...code}></Codearea>
+		</div>
+	</main>
+</Router>
 
 <style>
 	main {
