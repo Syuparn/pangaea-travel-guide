@@ -1,7 +1,16 @@
 <script lang="ts">
     import {pageLink} from "./pagelinkstore.js";
+    import {code} from "./codestore.js";
     // HACK: reload current path and update page link store
     pageLink.reload()
+
+    // update codearea
+    code.insert(
+        // source
+        `# you can see and edit source code here`,
+        // input
+        `some input to read`,
+    )
 </script>
 
 <h1>0. Introduction</h1>

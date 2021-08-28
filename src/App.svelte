@@ -5,12 +5,6 @@
     import Header from "./Header.svelte";
     import IntroductionPage from "./pages/Introduction.svelte";
     import HelloWorldPage from "./pages/HelloWorld.svelte";
-
-    const code = {
-        source: `"Hello, world!".p`,
-        input: "abc",
-        output: ""
-    };
 </script>
 
 <Router>
@@ -21,7 +15,7 @@
                 <Route path="" component={IntroductionPage} />
                 <Route path="helloworld" component={HelloWorldPage} />
             </Explanation>
-            <Codearea {...code}></Codearea>
+            <Codearea></Codearea>
         </div>
     </main>
 </Router>
