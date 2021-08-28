@@ -5,7 +5,7 @@
     Since travel-guide works as SPA, any path under the top page is actually
     worked on index.html. For that reason, you cannot access childs pages
     (like `/pangaea-travel-guide/foo`) directly. This page hacks 404 page of GitHub Page
-    and redirects to the top page.
+    and accesses to the top page.
 -->
 <html>
 <head>
@@ -18,9 +18,9 @@
             const [basepath, ...paths] = location.pathname.split('/');
             const path = paths.join('/');
             // encode path string to query parameter
-            const urlToRedirect = `${location.origin}/${basepath}?p=${encodeURIComponent(path)}`;
-            // redirect to the top page
-            loc.replace(urlToRedirect);
+            const urlToMove = `${location.origin}/${basepath}?p=${encodeURIComponent(path)}`;
+            // move to the top page
+            location.replace(urlToMove);
         })();
     </script>
 </head>
