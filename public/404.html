@@ -14,8 +14,8 @@
 
     <script>
         (function(){
-            const BASEPATH_DEPTH = 1;
-            const [basepath, ...paths] = location.pathname.split('/');
+            //    ["", "pangaea-travel-guide", [...]] = "/pangaea-travel-guide/foo/bar"
+            const [_, basepath, ...paths] = location.pathname.split('/');
             const path = paths.join('/');
             // encode path string to query parameter
             const urlToMove = `${location.origin}/${basepath}?p=${encodeURIComponent(path)}`;
