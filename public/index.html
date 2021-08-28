@@ -10,6 +10,16 @@
 	<link rel='stylesheet' href='./global.css'>
 	<link rel='stylesheet' href='./build/bundle.css'>
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<script>
+		// HACK: extract path info encoded in query parameter to resolve redirect
+		// (see 404.html for details)
+		(function(){
+			const path = new URLSearchParams(location.search).get('p');
+			// replace path in history, which is used for svelte-routing
+			//                  state, title, url
+			history.replaceState(null, null, `${location.pathname}/${path}`);
+		})()
+	</script>
 	<!-- https://raw.githubusercontent.com/golang/go/go1.17/misc/wasm/wasm_exec.js -->
 	<script src='./wasm_exec.js'></script>
 
