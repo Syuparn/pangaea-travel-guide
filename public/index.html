@@ -15,9 +15,11 @@
 		(function(){
 			const path = new URLSearchParams(location.search).get('p');
 			if (path) {
+				const p = location.pathname
+				const url = p.endsWith('/') ? `${p}${path}` : `${p}/${path}`
 				// replace path in history, which is used for svelte-routing
 				//                  state, title, url
-				history.replaceState(null, null, `${location.pathname}/${path}`);
+				history.replaceState(null, null, url);
 			}
 		})()
 	</script>
