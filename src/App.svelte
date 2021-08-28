@@ -5,9 +5,10 @@
     import Header from "./Header.svelte";
     import IntroductionPage from "./pages/Introduction.svelte";
     import HelloWorldPage from "./pages/HelloWorld.svelte";
+	import {BASEPATH} from "./consts.js";
 </script>
 
-<Router>
+<Router basepath="{BASEPATH}">
     <main>
         <Header></Header>
         <div class="flex">

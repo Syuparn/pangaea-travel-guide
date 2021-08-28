@@ -1,3 +1,5 @@
+import {BASEPATH} from "../consts.js";
+
 const pages = [
   '',
   'helloworld',
@@ -29,10 +31,13 @@ class Page {
 }
 
 export function currentPage(): Page {
-  // extract the last part of the current path
-  const page = location.pathname.split('/').slice(-1)[0];
-  if (page === undefined) { // no paths found
-    return new Page('');
-  }
+  const page = trimPrefix(location.pathname, BASEPATH);
   return new Page(page);
+}
+
+function trimPrefix(str: string, prefix: string): string {
+  if (str.startsWith(prefix)) {
+    return str.substr(prefix.length);
+  }
+  return str;
 }
