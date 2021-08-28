@@ -31,7 +31,9 @@ class Page {
 }
 
 export function currentPage(): Page {
-  const page = trimPrefix(location.pathname, BASEPATH);
+  // NOTE: base path trimming and slash trimming must be separated
+  //       so that link can work on both of basepathes `/foo` and `/foo/`
+  const page = trimPrefix(trimPrefix(location.pathname, BASEPATH), '/');
   return new Page(page);
 }
 
