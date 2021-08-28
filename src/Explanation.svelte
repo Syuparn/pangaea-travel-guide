@@ -13,8 +13,8 @@
     }
 
     @media (min-width: 640px) {
-		div {
-			flex: 1;
-		}
-	}
+        div {
+            flex: 1;
+        }
+    }
 </style>

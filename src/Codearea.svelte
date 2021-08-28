@@ -33,10 +33,10 @@
     }
 
     @media (min-width: 640px) {
-		#container {
-			flex: 1;
-		}
-	}
+        #container {
+            flex: 1;
+        }
+    }
 
     .title {
         color: white;
