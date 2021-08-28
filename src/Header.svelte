@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { Link } from "svelte-routing";
     import LinkButton from "./LinkButton.svelte";
     import {pageLink} from "./pages/pagelinkstore.js";
 
@@ -6,7 +7,7 @@
 </script>
 
 <header>
-    <img id="logo" src={src} alt="Pangaea Travel Guide"/>
+    <Link to=""><img id="logo" src={src} alt="Pangaea Travel Guide"/></Link>
     <LinkButton link="{$pageLink.back().page()}" text="back"></LinkButton>
     <LinkButton link="{$pageLink.next().page()}" text="next"></LinkButton>
 </header>
