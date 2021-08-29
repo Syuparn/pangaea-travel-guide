@@ -10,6 +10,10 @@ const pages = [
   'object',
   'methods',
   'array',
+  'chains',
+  'list-chain',
+  'reduce-chain',
+  'additional-chains',
   'congratulations',
 ];
 

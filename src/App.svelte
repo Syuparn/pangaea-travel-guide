@@ -14,6 +14,10 @@
 	import ObjectPage from "./pages/Object.svelte";
 	import MethodsPage from "./pages/Methods.svelte";
 	import ArrayPage from "./pages/Array.svelte";
+	import ChainsPage from "./pages/Chains.svelte";
+	import ListChainPage from "./pages/ListChain.svelte";
+	import ReduceChainPage from "./pages/ReduceChain.svelte";
+	import AdditionalChainsPage from "./pages/AdditionalChains.svelte";
 	import CongratulationsPage from "./pages/Congratulations.svelte";
 
 	import {BASEPATH} from "./consts.js";
@@ -33,6 +37,10 @@
                 <Route path="object" component={ObjectPage} />
                 <Route path="methods" component={MethodsPage} />
                 <Route path="array" component={ArrayPage} />
+                <Route path="chains" component={ChainsPage} />
+                <Route path="list-chain" component={ListChainPage} />
+                <Route path="reduce-chain" component={ReduceChainPage} />
+                <Route path="additional-chains" component={AdditionalChainsPage} />
                 <Route path="congratulations" component={CongratulationsPage} />
             </Explanation>
             <Codearea></Codearea>
