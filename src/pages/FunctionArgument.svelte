@@ -9,16 +9,16 @@
     code.insert(
         // source
         dedent`
-            # print hello world
-            "Hello, world!".p
+            apply := {|a, b, f| f(a, b)}
+            apply(1, 2) {|a, b| (a + b).p}
         `,
         // input
         ``,
     )
 </script>
 
-<h1>Hello World</h1>
+<h1>Function Arguements</h1>
 <p>
-    Pangaea is an object-oriented language. Method <span class="code">p</span> prints out itself.
-    Lines starts with <span class="code">#</span> are treated as comments.
+    You can write trailing function literal arguments outside the parentheses.
+    This may help you to write higher-order functions.
 </p>

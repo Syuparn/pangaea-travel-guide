@@ -3,6 +3,13 @@ import {BASEPATH} from "../consts.js";
 const pages = [
   '',
   'helloworld',
+  'objects',
+  'function',
+  'polymorphism',
+  'function-argument',
+  'object',
+  'methods',
+  'array',
 ];
 
 class Page {
@@ -14,15 +21,18 @@ class Page {
     if (i === -1 || i === pages.length - 1) {
       return new Page('')
     }
-    return new Page(pages[i+1]);
+    return new Page(pages[i + 1]);
   }
 
   back(): Page {
     const i = pages.indexOf(this._page);
-    if (i === -1 || i === 0) {
+    if (i === -1) {
       return new Page('');
     }
-    return new Page(pages[i-1]);
+    if (i === 0) {
+      return new Page(pages[pages.length - 1]);
+    }
+    return new Page(pages[i - 1]);
   }
 
   page(): string {

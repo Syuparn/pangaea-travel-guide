@@ -9,16 +9,20 @@
     code.insert(
         // source
         dedent`
-            # print hello world
-            "Hello, world!".p
+            double := {|x| x * 2}
+            double(4).p
+            double("abc").p
         `,
         // input
         ``,
     )
 </script>
 
-<h1>Hello World</h1>
+<h1>Polymorphism</h1>
 <p>
-    Pangaea is an object-oriented language. Method <span class="code">p</span> prints out itself.
-    Lines starts with <span class="code">#</span> are treated as comments.
+    Since pangaea is dynamically typed, any object can be used as an argument.
+</p>
+<h2>Practice</h2>
+<p>
+    What <span class="code">double</span> returns if you pass <span class="code">[1,2,3]</span>?
 </p>

@@ -7,9 +7,9 @@
 
 <div id="container">
     <p class="title">source code</p>
-    <Input rows={5} bind:text={$code.source}></Input>
+    <Input rows={10} bind:text={$code.source}></Input>
     <p class="title">input</p>
-    <Input rows={2} bind:text={$code.input}></Input>
+    <Input rows={1} bind:text={$code.input}></Input>
     <p class="button-row"><RunButton on:click={code.run}></RunButton></p>
     <Output text={$code.output}></Output>
 </div>

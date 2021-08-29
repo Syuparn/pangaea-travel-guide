@@ -1,4 +1,5 @@
 <script lang="ts">
+    import dedent from 'ts-dedent';
     import {pageLink} from "./pagelinkstore.js";
     import {code} from "./codestore.js";
     // HACK: reload current path and update page link store
@@ -7,19 +8,27 @@
     // update codearea
     code.insert(
         // source
-        `# you can see and edit source code here`,
+        dedent`
+            # you can see and edit source code here
+            "Hello, world!".p
+        `,
         // input
         `some input to read`,
     )
 </script>
 
-<h1>0. Introduction</h1>
+<h1>Introduction</h1>
 <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Welcome to <i>Pangaea Travel Guide!</i><br>
 </p>
-
-<style>
-    h1 {
-        font-size: 1.2em;
-    }
-</style>
+<p>
+    This is a hands-on tutorial website for Pangaea programming language.
+    You can edit <strong>source code</strong> and <strong>input</strong> area on the right side,
+    and run them by <strong>run</strong> button.
+    They are evaluated locally by the Pangaea interpreter written in WebAssembly.
+</p>
+<p>
+    If you want to run your own codes freely,
+    try <a href="https://syuparn.github.io/Pangaea/">Pangaea Playground</a> instead.
+    Also, you can download a Pangaea binary from <a href="https://github.com/Syuparn/Pangaea">the language repository</a>.
+</p>
