@@ -27,6 +27,8 @@
 <p>
     Props can be referred by dot chain <span class="code">.</span>.
     You can also use indexing <span class="code">[]</span> with symbols (<span class="code">'foo</span>) or strings.
+    Note that <strong>you cannot set properties once the object is created</strong>
+    because all objects in Pangaea are immutable.
 </p>
 <h2>Practice</h2>
 <p>
