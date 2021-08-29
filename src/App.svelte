@@ -14,6 +14,7 @@
 	import ObjectPage from "./pages/Object.svelte";
 	import MethodsPage from "./pages/Methods.svelte";
 	import ArrayPage from "./pages/Array.svelte";
+	import CongratulationsPage from "./pages/Congratulations.svelte";
 
 	import {BASEPATH} from "./consts.js";
 </script>
@@ -32,6 +33,7 @@
                 <Route path="object" component={ObjectPage} />
                 <Route path="methods" component={MethodsPage} />
                 <Route path="array" component={ArrayPage} />
+                <Route path="congratulations" component={CongratulationsPage} />
             </Explanation>
             <Codearea></Codearea>
         </div>

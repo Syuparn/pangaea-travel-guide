@@ -10,6 +10,7 @@ const pages = [
   'object',
   'methods',
   'array',
+  'congratulations',
 ];
 
 class Page {
