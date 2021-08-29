@@ -21,6 +21,8 @@ const pages = [
   'object-system',
   'inheritance',
   'constructors',
+  'if',
+  'statements',
   'congratulations',
 ];
 
