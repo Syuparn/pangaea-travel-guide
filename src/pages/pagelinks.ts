@@ -18,6 +18,9 @@ const pages = [
   'list-chain',
   'reduce-chain',
   'additional-chains',
+  'object-system',
+  'inheritance',
+  'constructors',
   'congratulations',
 ];
 
