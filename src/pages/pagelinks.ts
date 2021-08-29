@@ -3,6 +3,13 @@ import {BASEPATH} from "../consts.js";
 const pages = [
   '',
   'helloworld',
+  'objects',
+  'function',
+  'polymorphism',
+  'function-argument',
+  'object',
+  'methods',
+  'array',
 ];
 
 class Page {

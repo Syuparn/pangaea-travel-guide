@@ -1,10 +1,20 @@
 <script lang="ts">
     import { Router, Route } from "svelte-routing";
-    import Codearea from "./Codearea.svelte";
+
+	import Codearea from "./Codearea.svelte";
     import Explanation from "./Explanation.svelte";
     import Header from "./Header.svelte";
-    import IntroductionPage from "./pages/Introduction.svelte";
+
+	import IntroductionPage from "./pages/Introduction.svelte";
     import HelloWorldPage from "./pages/HelloWorld.svelte";
+	import ObjectsPage from "./pages/Objects.svelte";
+	import FunctionPage from "./pages/Function.svelte";
+	import PolymorphismPage from "./pages/Polymorphism.svelte";
+	import FunctionArgumentPage from "./pages/FunctionArgument.svelte";
+	import ObjectPage from "./pages/Object.svelte";
+	import MethodsPage from "./pages/Methods.svelte";
+	import ArrayPage from "./pages/Array.svelte";
+
 	import {BASEPATH} from "./consts.js";
 </script>
 
@@ -15,6 +25,13 @@
             <Explanation>
                 <Route path="" component={IntroductionPage} />
                 <Route path="helloworld" component={HelloWorldPage} />
+                <Route path="objects" component={ObjectsPage} />
+                <Route path="function" component={FunctionPage} />
+                <Route path="polymorphism" component={PolymorphismPage} />
+                <Route path="function-argument" component={FunctionArgumentPage} />
+                <Route path="object" component={ObjectPage} />
+                <Route path="methods" component={MethodsPage} />
+                <Route path="array" component={ArrayPage} />
             </Explanation>
             <Codearea></Codearea>
         </div>

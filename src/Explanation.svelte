@@ -23,6 +23,10 @@
         font-size: 1.2em;
     }
 
+    div :global(h2) {
+        font-size: 1em;
+    }
+
     div :global(a) {
         color: white;
         text-decoration: underline;

@@ -17,7 +17,7 @@
     )
 </script>
 
-<h1>0. Introduction</h1>
+<h1>Introduction</h1>
 <p>
     Welcome to <i>Pangaea Travel Guide!</i><br>
 </p>
