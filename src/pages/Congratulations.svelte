@@ -29,5 +29,5 @@
     see <a href="https://github.com/Syuparn/Pangaea/tree/master/docs/reference">the language reference</a>.
 </p>
 <p>
-    Thank you for playing the travel guide. Pangaea is waiting for you!
+    Thank you for playing the travel guide. <strong>Pangaea is waiting for you!</strong>
 </p>
