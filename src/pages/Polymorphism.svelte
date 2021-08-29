@@ -24,5 +24,5 @@
 </p>
 <h2>Practice</h2>
 <p>
-    What <code>double</code> returns if you pass <code>[1,2,3]</code>?
+    What <span class="code">double</span> returns if you pass <span class="code">[1,2,3]</span>?
 </p>

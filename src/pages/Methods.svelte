@@ -27,9 +27,9 @@
 
 <h1>Methods</h1>
 <p>
-    Objects can contain method props (<code>m&#123||&#125</code>).
+    Objects can contain method props (<span class="code">m&#123||&#125</span>).
     Method can be used like ordinary functions, but the receiver is set to the 1st argument.
-    The receiver can be referred as 1st parameter <code>self</code>.
+    The receiver can be referred as 1st parameter <span class="code">self</span>.
 </p>
 <p>
     Parentheses of method call can be omitted if no arguments other than the receiver are passed.
@@ -40,6 +40,6 @@
 <h2>Practice</h2>
 <p>
     When you refer props of 1st parameter of the function, you can omit its receiver
-    (<i>anon chain</i>: <code>&#123|x| .a&#125</code> is equivalent to <code>&#123|x| x.a&#125</code>).
-    Let's remove verbose <code>self</code> in the source code!
+    (<i>anon chain</i>: <span class="code">&#123|x| .a&#125</span> is equivalent to <span class="code">&#123|x| x.a&#125</span>).
+    Let's remove verbose <span class="code">self</span> in the source code!
 </p>

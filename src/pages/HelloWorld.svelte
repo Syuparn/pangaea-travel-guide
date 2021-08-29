@@ -19,6 +19,6 @@
 
 <h1>Hello World</h1>
 <p>
-    Pangaea is an object-oriented language. Method <code>p</code> prints out itself.
-    Lines starts with <code>#</code> are treated as comments.
+    Pangaea is an object-oriented language. Method <span class="code">p</span> prints out itself.
+    Lines starts with <span class="code">#</span> are treated as comments.
 </p>

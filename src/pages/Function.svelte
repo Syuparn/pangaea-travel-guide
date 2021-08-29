@@ -25,15 +25,15 @@
 <h1>Function</h1>
 <p>
     Function definition is simple; just assign a function literal to a variable.
-    <code>return</code> is not nesessary because
+    <span class="code">return</span> is not nesessary because
     functions return the last statement evaluated in them.
 </p>
 <p>
     You can also use keyword parameters to set arguments' default values.
-    Note that <code>name: </code> in the argument cannot be omitted because
+    Note that <span class="code">name: </span> in the argument cannot be omitted because
     Pangaea distinguishes keyword arguments from positional ones.
 </p>
 <h2>Practice</h2>
 <p>
-    What happens if you pass too many or too few arguments to <code>add</code>?
+    What happens if you pass too many or too few arguments to <span class="code">add</span>?
 </p>

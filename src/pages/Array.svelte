@@ -24,11 +24,11 @@
 <h1>Array</h1>
 <p>
     Arrays can contain any objects. Their elements can be referred by indexing.
-    Index starts with <code>0</code>.
+    Index starts with <span class="code">0</span>.
     You can also use ranges for indexing to get multiple elements.
 </p>
 <h2>Practice</h2>
 <p>
-    Print an array with the elements of <code>arr</code> in reverse order.
+    Print an array with the elements of <span class="code">arr</span> in reverse order.
     (Hint: you can use either of array methods or indexing!)
 </p>

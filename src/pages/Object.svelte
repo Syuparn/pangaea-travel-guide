@@ -25,10 +25,10 @@
     Objects can contain any type of props.
 </p>
 <p>
-    Props can be referred by dot chain <code>.</code>.
-    You can also use indexing <code>[]</code> with symbols (<code>'foo</code>) or strings.
+    Props can be referred by dot chain <span class="code">.</span>.
+    You can also use indexing <span class="code">[]</span> with symbols (<span class="code">'foo</span>) or strings.
 </p>
 <h2>Practice</h2>
 <p>
-    Print property <code>dynamic?</code>.
+    Print property <span class="code">dynamic?</span>.
 </p>
