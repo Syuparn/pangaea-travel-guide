@@ -23,6 +23,7 @@ const pages = [
   'constructors',
   'if',
   'statements',
+  'input',
   'congratulations',
 ];
 
