@@ -17,5 +17,8 @@
         font-family: 'Source Code Pro', monospace;
         text-align: left;
         padding: 0.5rem;
+        /* wrap too long lines */
+        white-space: pre-wrap;
+        word-break: break-all;
     }
 </style>

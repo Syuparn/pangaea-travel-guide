@@ -10,6 +10,21 @@ const pages = [
   'object',
   'methods',
   'array',
+  'call-expressions',
+  'property-call',
+  'literal-call',
+  'variable-call',
+  'chains',
+  'list-chain',
+  'reduce-chain',
+  'additional-chains',
+  'object-system',
+  'inheritance',
+  'constructors',
+  'if',
+  'statements',
+  'input',
+  'congratulations',
 ];
 
 class Page {
