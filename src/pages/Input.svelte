@@ -14,7 +14,7 @@
             # read second line
             <>.S.{"2: #{\\}"}.p
             # read the rest at once
-            <>@p
+            <>.A.{"rest: #{\\}"}.p
         `,
         // input
         dedent`
@@ -32,9 +32,9 @@
     <span class="code">&#60;&#62;</span> (or <i>diamond</i>) reads stdin.
     This produces each line of stdin like iterators.
     With method <span class="code">S</span>, you can read each line one by one.
-    With list chain, you can read the rest of lines at once.
+    With method <span class="code">A</span> and list chain, you can read the rest of lines at once.
 </p>
 <h2>Practice</h2>
 <p>
-    After all lines have been read, what does <span class="code">&#60;&#62;.S</span> return?
+    After all lines have been read, what does <span class="code">&#60;&#62;.S</span> and <span class="code">&#60;&#62;.A</span> return?
 </p>
