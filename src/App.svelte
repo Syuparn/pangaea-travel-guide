@@ -14,6 +14,10 @@
 	import ObjectPage from "./pages/Object.svelte";
 	import MethodsPage from "./pages/Methods.svelte";
 	import ArrayPage from "./pages/Array.svelte";
+	import CallExpressionsPage from "./pages/CallExpressions.svelte";
+	import PropertyCallPage from "./pages/PropertyCall.svelte";
+	import LiteralCallPage from "./pages/LiteralCall.svelte";
+	import VariableCallPage from "./pages/VariableCall.svelte";
 	import ChainsPage from "./pages/Chains.svelte";
 	import ListChainPage from "./pages/ListChain.svelte";
 	import ReduceChainPage from "./pages/ReduceChain.svelte";
@@ -37,6 +41,10 @@
                 <Route path="object" component={ObjectPage} />
                 <Route path="methods" component={MethodsPage} />
                 <Route path="array" component={ArrayPage} />
+                <Route path="call-expressions" component={CallExpressionsPage} />
+                <Route path="property-call" component={PropertyCallPage} />
+                <Route path="literal-call" component={LiteralCallPage} />
+                <Route path="variable-call" component={VariableCallPage} />
                 <Route path="chains" component={ChainsPage} />
                 <Route path="list-chain" component={ListChainPage} />
                 <Route path="reduce-chain" component={ReduceChainPage} />
