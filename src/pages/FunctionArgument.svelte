@@ -17,7 +17,7 @@
     )
 </script>
 
-<h1>Function Arguements</h1>
+<h1>Function Arguments</h1>
 <p>
     You can write trailing function literal arguments outside the parentheses.
     This may help you to write higher-order functions.
