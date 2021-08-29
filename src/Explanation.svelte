@@ -35,4 +35,12 @@
     div :global(i) {
         color: white;
     }
+
+    div :global(code) {
+        background-color: #17262b;
+        color: #c0d32b;
+        font-family: 'Source Code Pro', monospace;
+        padding: 0.1em;
+        border-radius: 0.1em;
+    }
 </style>
