@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<title>Pangaea Travel Guide</title>
+    <title>Pangaea Travel Guide</title>
 
-	<link rel='icon' type='image/png' href='./favicon.png'>
-	<link rel='stylesheet' href='./global.css'>
-	<link rel='stylesheet' href='./build/bundle.css'>
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-	<script>
-		// HACK: extract path info encoded in query parameter (see 404.html for details)
-		(function(){
-			const path = new URLSearchParams(location.search).get('p');
-			if (path) {
-				const p = location.pathname;
-				const url = p.endsWith('/') ? `${p}${path}` : `${p}/${path}`;
-				// replace path in history, which is used for svelte-routing
-				//                  state, title, url
-				history.replaceState(null, null, url);
-			}
-		})()
-	</script>
-	<!-- https://raw.githubusercontent.com/golang/go/go1.17/misc/wasm/wasm_exec.js -->
-	<script src='./wasm_exec.js'></script>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./build/bundle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+      rel="stylesheet"
+    />
+    <script>
+      // HACK: extract path info encoded in query parameter (see 404.html for details)
+      (function () {
+        const path = new URLSearchParams(location.search).get('p');
+        if (path) {
+          const p = location.pathname;
+          const url = p.endsWith('/') ? `${p}${path}` : `${p}/${path}`;
+          // replace path in history, which is used for svelte-routing
+          //                  state, title, url
+          history.replaceState(null, null, url);
+        }
+      })();
+    </script>
+    <!-- https://raw.githubusercontent.com/golang/go/go1.17/misc/wasm/wasm_exec.js -->
+    <script src="./wasm_exec.js"></script>
 
-	<script defer src='./build/bundle.js'></script>
-</head>
+    <script defer src="./build/bundle.js"></script>
+  </head>
 
-<body>
-</body>
+  <body></body>
 </html>

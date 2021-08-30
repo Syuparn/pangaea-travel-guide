@@ -1,14 +1,14 @@
 <script lang="ts">
-    import dedent from 'ts-dedent';
-    import {pageLink} from "./pagelinkstore.js";
-    import {code} from "./codestore.js";
-    // HACK: reload current path and update page link store
-    pageLink.reload()
+  import dedent from 'ts-dedent';
+  import {pageLink} from './pagelinkstore.js';
+  import {code} from './codestore.js';
+  // HACK: reload current path and update page link store
+  pageLink.reload();
 
-    // update codearea
-    code.insert(
-        // source
-        dedent`
+  // update codearea
+  code.insert(
+    // source
+    dedent`
             # int
             123.p
             # float
@@ -32,12 +32,13 @@
             # nil
             nil.p
         `,
-        // input
-        ``,
-    )
+    // input
+    ``
+  );
 </script>
 
 <h1>Objects</h1>
 <p>
-    In Pangaea, everything is object. These are object literals you can create directly.
+  In Pangaea, everything is object. These are object literals you can create
+  directly.
 </p>

@@ -13,21 +13,21 @@ jobs:
       matrix:
         node-version: [14.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Copy dependencies to public directory
-      run: |
-        wget -P ./public https://raw.githubusercontent.com/Syuparn/Pangaea/gh-pages/main.wasm
-        wget -P ./public https://raw.githubusercontent.com/golang/go/go1.17/misc/wasm/wasm_exec.js
-    - name: setup node
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-    - name: install
-      run: npm install
-    - name: build
-      run: npm run build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+      - uses: actions/checkout@v2
+      - name: Copy dependencies to public directory
+        run: |
+          wget -P ./public https://raw.githubusercontent.com/Syuparn/Pangaea/gh-pages/main.wasm
+          wget -P ./public https://raw.githubusercontent.com/golang/go/go1.17/misc/wasm/wasm_exec.js
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: install
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
