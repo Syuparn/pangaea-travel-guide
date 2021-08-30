@@ -1,4 +1,4 @@
-import {BASEPATH} from "../consts.js";
+import {BASEPATH} from '../consts.js';
 
 const pages = [
   '',
@@ -28,13 +28,12 @@ const pages = [
 ];
 
 class Page {
-  constructor (private _page: string) {
-  }
+  constructor(private _page: string) {}
 
   next(): Page {
     const i = pages.indexOf(this._page);
     if (i === -1 || i === pages.length - 1) {
-      return new Page('')
+      return new Page('');
     }
     return new Page(pages[i + 1]);
   }

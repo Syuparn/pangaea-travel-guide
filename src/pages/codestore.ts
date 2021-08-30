@@ -1,14 +1,14 @@
-import { writable } from 'svelte/store';
-import { run } from "../pangaea/pangaea.js";
+import {writable} from 'svelte/store';
+import {run} from '../pangaea/pangaea.js';
 
 type Code = {
-  source: string,
-  input: string,
-  output: string,
+  source: string;
+  input: string;
+  output: string;
 };
 
 function createCode() {
-  const { subscribe, set, update } = writable<Code>({
+  const {subscribe, set, update} = writable<Code>({
     source: '',
     input: '',
     output: '',
@@ -16,8 +16,13 @@ function createCode() {
   return {
     subscribe,
     insert: (source: string, input: string) => set({source, input, output: ''}),
-    run: () => update(({source, input}) => ({source, input, output: run(source, input)}))
-  }
+    run: () =>
+      update(({source, input}) => ({
+        source,
+        input,
+        output: run(source, input),
+      })),
+  };
 }
 
 export const code = createCode();
