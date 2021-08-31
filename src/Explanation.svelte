@@ -42,7 +42,7 @@
 
   /* 
         HACK: use .code class instead of code tag because it occurs wrong warning below
-        "<span class="code"> will be treated as an HTML element unless it begins with a capital letter"   
+        "<code> will be treated as an HTML element unless it begins with a capital letter"
     */
   div :global(.code) {
     background-color: #17262b;
