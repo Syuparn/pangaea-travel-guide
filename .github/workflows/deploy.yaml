@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  # enable to re-run actions manually
+  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
   build:
