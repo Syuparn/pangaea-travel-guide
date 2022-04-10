@@ -13,3 +13,17 @@ Visit https://syuparn.github.io/pangaea-travel-guide/
 - npm
 - Svelte
 - svelte-routing
+
+## For developers
+
+### Run locally
+
+```bash
+# download dependencies
+$ wget -P ./public https://raw.githubusercontent.com/Syuparn/Pangaea/gh-pages/main.wasm
+$ wget -P ./public https://raw.githubusercontent.com/golang/go/go1.18/misc/wasm/wasm_exec.js
+
+$ npm install
+# run on localhost:5000
+$ npm run dev
+```
