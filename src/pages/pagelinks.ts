@@ -68,7 +68,7 @@ export function currentPage(): Page {
 
 function trimPrefix(str: string, prefix: string): string {
   if (str.startsWith(prefix)) {
-    return str.substr(prefix.length);
+    return str.substring(prefix.length);
   }
   return str;
 }
