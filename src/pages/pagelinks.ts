@@ -25,6 +25,7 @@ const pages = [
   'if',
   'statements',
   'input',
+  'csv',
   'explore-props',
   'congratulations',
 ];

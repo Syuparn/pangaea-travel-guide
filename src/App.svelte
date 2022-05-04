@@ -28,6 +28,7 @@
   import IfPage from './pages/If.svelte';
   import StatementsPage from './pages/Statements.svelte';
   import InputPage from './pages/Input.svelte';
+  import CSVPage from './pages/CSV.svelte';
   import ExploreProps from './pages/ExploreProps.svelte';
   import CongratulationsPage from './pages/Congratulations.svelte';
 
@@ -62,6 +63,7 @@
         <Route path="if" component={IfPage} />
         <Route path="statements" component={StatementsPage} />
         <Route path="input" component={InputPage} />
+        <Route path="csv" component={CSVPage} />
         <Route path="explore-props" component={ExploreProps} />
         <Route path="congratulations" component={CongratulationsPage} />
       </Explanation>
