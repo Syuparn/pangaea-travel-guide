@@ -27,6 +27,7 @@
   import ConstructorsPage from './pages/Constructors.svelte';
   import IfPage from './pages/If.svelte';
   import StatementsPage from './pages/Statements.svelte';
+  import CasePage from './pages/Case.svelte';
   import InputPage from './pages/Input.svelte';
   import CSVPage from './pages/CSV.svelte';
   import JSONPage from './pages/JSON.svelte';
@@ -63,6 +64,7 @@
         <Route path="constructors" component={ConstructorsPage} />
         <Route path="if" component={IfPage} />
         <Route path="statements" component={StatementsPage} />
+        <Route path="case" component={CasePage} />
         <Route path="input" component={InputPage} />
         <Route path="csv" component={CSVPage} />
         <Route path="json" component={JSONPage} />

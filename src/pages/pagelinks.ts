@@ -24,6 +24,7 @@ const pages = [
   'constructors',
   'if',
   'statements',
+  'case',
   'input',
   'csv',
   'json',
