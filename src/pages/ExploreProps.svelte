@@ -16,15 +16,15 @@
     ``
   );
 </script>
-  
+
 <h1>How to explore properties</h1>
 <p>
   You can explore object's properties (especially methods) by method
   <span class="code">keys</span>.
 </p>
 <p>
-  <span class="code">private?: true</span> is nesseccary to explore special methods
-  like <span class="code">_iter</span> and <span class="code">+</span>.
+  <span class="code">private?: true</span> is nesseccary to explore special
+  methods like <span class="code">_iter</span> and <span class="code">+</span>.
 </p>
 <h2>Practice</h2>
 <p>

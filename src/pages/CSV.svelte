@@ -27,6 +27,4 @@
   With <i>diamond</i> and list chains, you can handle CSV files easily.
 </p>
 <h2>Practice</h2>
-<p>
-  Count sum of all amount of fruits.
-</p>
+<p>Count sum of all amount of fruits.</p>

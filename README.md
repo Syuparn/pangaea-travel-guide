@@ -27,3 +27,10 @@ $ npm install
 # run on localhost:5000
 $ npm run dev
 ```
+
+# For developers
+
+```bash
+$ npm run fmt
+$ npm run lint
+```
