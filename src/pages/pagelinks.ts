@@ -1,5 +1,6 @@
 import {BASEPATH} from '../consts.js';
 
+// URL paths for each page (used in App.svelte to refer components)
 const pages = [
   '',
   'helloworld',
@@ -24,6 +25,7 @@ const pages = [
   'if',
   'statements',
   'input',
+  'explore-props',
   'congratulations',
 ];
 
